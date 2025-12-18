@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-out: Casinha Amarela</title>
+    <!-- Carregamento do Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos customizados para manter a identidade visual */
+        :root {
+            --color-primary: #FBBF24; /* Amber 500 */
+            --color-accent: #10B981;  /* Emerald */
+        }
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f8fafc; /* Slate 50 */
+        }
+        .instruction-card {
+            border-left: 5px solid var(--color-primary);
+            transition: transform 0.2s;
+        }
+        .instruction-card:hover {
+            transform: translateX(5px);
+        }
+        .accent-bg {
+            background-color: var(--color-primary);
+        }
+        .accent-text {
+            color: var(--color-primary);
+        }
+    </style>
+</head>
+
+<body class="p-4 md:p-8">
+
+    <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
+        
+        <!-- HEADER -->
+        <div class="accent-bg p-8 text-white text-center">
+            <h1 class="text-3xl font-bold tracking-tight">👋 Hora da Partida</h1>
+            <p class="mt-2 text-lg opacity-90">Esperamos que tenham tido experiências inesquecíveis!</p>
+        </div>
+
+        <div class="p-6 md:p-10">
+            <p class="text-gray-600 mb-8 text-center italic">
+                Antes de partir, por favor, verifique os seguintes itens para nos ajudar a manter a Casinha Amarela pronta para os próximos hóspedes:
+            </p>
+
+            <!-- CHECKLIST DE SAÍDA -->
+            <div class="space-y-4">
+                
+                <!-- Jacuzzi e Guarda-sol -->
+                <div class="p-4 bg-gray-50 rounded-xl instruction-card shadow-sm flex items-start">
+                    <span class="text-2xl mr-4">🛀</span>
+                    <div>
+                        <h3 class="font-bold text-gray-800">Área Externa</h3>
+                        <p class="text-gray-600 text-sm">Esvazie a Jacuzzi e amarre o guarda-sol (pode deixá-lo no mastro).</p>
+                    </div>
+                </div>
+
+                <!-- Louça -->
+                <div class="p-4 bg-gray-50 rounded-xl instruction-card shadow-sm flex items-start">
+                    <span class="text-2xl mr-4">🍽️</span>
+                    <div>
+                        <h3 class="font-bold text-gray-800">Cozinha</h3>
+                        <p class="text-gray-600 text-sm">Pedimos que lave a louça antes de ir embora para evitar o aparecimento de insetos.</p>
+                    </div>
+                </div>
+
+                <!-- Utilidades -->
+                <div class="p-4 bg-gray-50 rounded-xl instruction-card shadow-sm flex items-start">
+                    <span class="text-2xl mr-4">🚰</span>
+                    <div>
+                        <h3 class="font-bold text-gray-800">Verificação Final</h3>
+                        <p class="text-gray-600 text-sm">Certifique-se de que todas as torneiras estejam fechadas e as luzes apagadas.</p>
+                    </div>
+                </div>
+
+                <!-- Lixo -->
+                <div class="p-4 bg-gray-50 rounded-xl instruction-card shadow-sm flex items-start border-l-amber-500">
+                    <span class="text-2xl mr-4">🗑️</span>
+                    <div>
+                        <h3 class="font-bold text-gray-800">Descarte de Lixo</h3>
+                        <p class="text-gray-600 text-sm">Retire todos os lixos e deixe na lixeira que fica em frente à portaria. Isso pode ser feito no momento em que forem entregar as chaves.</p>
+                    </div>
+                </div>
+
+                <!-- Chaves -->
+                <div class="p-4 bg-yellow-50 rounded-xl border-2 border-yellow-200 shadow-sm flex items-start">
+                    <span class="text-2xl mr-4">🔑</span>
+                    <div>
+                        <h3 class="font-bold text-yellow-800 uppercase text-xs tracking-wider">Passo Final</h3>
+                        <p class="text-yellow-900 font-semibold">Não esqueçam de deixar as chaves com o porteiro.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- DESPEDIDA -->
+            <div class="mt-12 text-center">
+                <h2 class="text-2xl font-bold accent-text">E voltem sempre!</h2>
+                <p class="text-gray-500 mt-2 font-medium">A Casinha Amarela agradece a preferência.</p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="accent-bg p-6 text-white text-center">
+            <p class="text-sm font-light">Boa viagem de retorno! ✨</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
